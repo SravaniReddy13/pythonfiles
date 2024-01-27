@@ -1,0 +1,21 @@
+import re
+
+#data=re.findall('AP[0-3][1-9][a-zA-Z],[0-9]{4}','AP08J9956T4')
+#print(data)
+#data=re.findall('\+91\-[6-9][0-9]{9}','igh5879jh9 +91-7755758577 hufhihki')
+#print(data)
+#file=open(r"C:\Users\administrator.MCA\Desktop\content.txt.txt",'r',)
+#data=file.read()
+#file.close()
+#data=re.findall('[aeiouAEIOU]+',data)
+#print(data)
+#print(len(data))
+#data=re.findall('[a-zA-Z0-9]+\.?[a-zA-Z0-9]*\@gmail.com','abc123.xyz123@gmail.com')
+#print(data)
+#a=re.sub('[ ]','_','data')
+#print(a)
+with open(r"C:\Users\administrator.MCA\Desktop\content.txt.txt",'r+',encoding='utf-8') as file:
+  data=file.read()
+  a=re.sub(' ','_',data)
+  file.seek(0)
+  file.write(a)
